@@ -4,10 +4,10 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "ie.pfai.app"
-        version   = "0.0.1"
+        version   = "0.0.3"
         versionCode = "1" >
 
-    <name>PFA Ireland Beta 1</name>
+    <name>PFA Ireland Beta 3</name>
 
     <description>
         PFAI application
