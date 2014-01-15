@@ -209,7 +209,7 @@
 /*Icons*/
 
 .icon-transferlist, .icon-news, .icon-membership, .icon-coaching, .icon-health, .icon-career, .icon-antidoping, .icon-tax, .icon-transfer, .icon-betting, .icon-agency, .icon-maps{
-    background-image: url('../images/list-icons/list-icons.png');
+    background-image: url('../images/list-icons/list-icons.svg');
     background-repeat: no-repeat;
     background-size: 17px;
     padding-left: 17px;
@@ -788,7 +788,7 @@ span .ui-icon .ui-icon-plus{
         /*Icons*/
 
     .icon-transferlist, .icon-news, .icon-membership, .icon-coaching, .icon-health, .icon-career, .icon-antidoping, .icon-tax, .icon-transfer, .icon-betting, .icon-agency, .icon-maps{
-    background-image: url('../images/list-icons/list-icons.png');
+    background-image: url('../images/list-icons/list-icons.svg');
     background-repeat: no-repeat;
     background-size: 23px;
     padding-left: 23px;
