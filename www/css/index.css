@@ -52,18 +52,13 @@
     width: 30%;
 }
 
-#home div.ui-panel-content-wrap-closed, #home div.ui-body-c:not(#left-panel){
+#home div.ui-panel-content-wrap-closed, #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_720.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
       
 }
-#home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
-    background-image: url('../images/montage/home_720.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-      
-}
+
 
 #contact.ui-body-c{
     /*background-image: url('../images/montage/home_720_blur.png');
@@ -72,8 +67,6 @@
     background: rgb(255,255,255);
       
 }
-
-
 
 .ui-header{
     height: 60px;   
@@ -144,6 +137,9 @@
     background: rgba(95,95,95,.7);
     border-bottom: 1px solid rgb(250,250,250);
 }
+#cont-link a:active span.arrow-right-home{
+    background-image: url('../images/svg/arr_wr.svg');
+}
 
 /* Over-ride listviews*/
 #newslist li h2{
@@ -168,6 +164,7 @@
     right: 5px;
     position: absolute;
 }
+
 .arrow-right{
     background-size: 8px;
     top: 35%;
@@ -296,31 +293,11 @@
     bottom: 15px;
     position: fixed;
     width: 100%;
-    /*left:0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    z-index: 100;
-    background: none;
-    border: none;*/
 }
 #com div{
     margin: 15px;
 }
 #com div a{
-    /*display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;*/
-    /*border-right: 1px solid #bfbfbf*/;
-    /*margin-right: -1px;*/
-    /*padding: 10px;*/
-    
     height: 60px;
     bottom: 0;
     width: 100%;
@@ -336,17 +313,43 @@
     box-shadow: inset 0 -1px 1px rgba(95,95,95,.8);
 }
 #com div a span{
-    font: .8em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    margin: 5px 16px;
+    background-size: 70px;
+    background-position: 0 5px;
+    padding-left: 70px;
+    padding-bottom: 40px;
 }
-/*#com div a#call{
-    background-image: url('../images/call_gr.png');
+#com div a:active{
+    background: rgb(95, 95, 95);
+}
+.icon-mobile{
+    background-image: url('../images/call_gr.svg');
     background-repeat: no-repeat;
-    background-size: 17px;
-    padding-left: 17px;   
-}*/
+}
+.icon-mail{
+    background-image: url('../images/mail_gr.svg');
+    background-repeat: no-repeat;
+}
+.icon-twitter{
+    background-image: url('../images/twit_gr.svg');
+    background-repeat: no-repeat;
+}
+.icon-facebook{
+    background-image: url('../images/face_gr.svg');
+    background-repeat: no-repeat;
+}
+
+#com div a:active span.icon-mobile{
+    background-image: url('../images/call_w.svg');
+}
+#com div a:active span.icon-mail{
+    background-image: url('../images/mail_w.svg');
+}
+#com div a:active span.icon-twitter{
+    background-image: url('../images/twit_w.svg');
+}
+#com div a:active span.icon-facebook{
+    background-image: url('../images/face_w.svg');
+}
 #com div a img{
     margin: 10px auto;
     max-height: 90%;
@@ -607,7 +610,7 @@ span .ui-icon .ui-icon-plus{
     background-image: url('../images/montage/home_768.png');
       
     }
-#home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
+    #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_768.png');
       
     }
@@ -616,7 +619,7 @@ span .ui-icon .ui-icon-plus{
     font-size: 2.5em;
     letter-spacing: 0;
     }
-.home-display p{
+    .home-display p{
     margin: 20px 0;
     width: 30%;
     font-size: 1.4em;
@@ -676,16 +679,11 @@ span .ui-icon .ui-icon-plus{
     }
     #com div a{
     height: 90px;
-    width: 25%;
     
     }
     #com div a img{
-    margin: 10px 30% 0;
-    max-width: 50%;
     }
     #com div a span{
-    font-size: .8em;
-    margin: 8px 30px;
     }
     #maps, #mapsContent,.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed {  
     height: 97%;
@@ -714,6 +712,18 @@ span .ui-icon .ui-icon-plus{
     background-position: 0 -200px;
     height: 900px;  
     }
+
+    #cont-link a {
+    height: 70px;
+    }
+    #cont-link a span:not(.arrow-right-home){
+    font-size: 1.8em;
+    }
+    .arrow-right-home{
+    background-size: 20px;
+    width: 40px;
+    height: 40px;
+    }
     
     /* Communications footer on homepage*/
     #com div.hide{
@@ -725,16 +735,10 @@ span .ui-icon .ui-icon-plus{
         
     }
     #com div a{
-    height: 110px;
-    width: 33.3%;
     }
     #com div a img{
-        margin: 15px 38% 0;
-        max-width: 60%;
     }
     #com div a span{
-    font-size: 1em;
-    margin: 8px 30px;
     }
     .feature .article-headline{
         font-size: 1.8em;  
