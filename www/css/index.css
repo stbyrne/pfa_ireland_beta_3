@@ -1,9 +1,10 @@
-#home .ui-panel .ui-panel-inner {
+.ui-panel .ui-panel-inner{
     overflow: auto;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;  
     -webkit-overflow-scrolling: touch;
 }
+
 
 #noconnect{
     width: 70%;
@@ -56,16 +57,17 @@
     background-image: url('../images/montage/home_720.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    
       
 }
 
 
-#contact.ui-body-c{
-    /*background-image: url('../images/montage/home_720_blur.png');
+#contact div.ui-panel-content-wrap-closed{
+    background-image: url('../images/montage/home_720_blur.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-    background: rgb(255,255,255);
-      
+    background-size: 100% 100%;
+    min-height: inherit;
+    /*background: rgb(255,255,255);*/
 }
 
 .ui-header{
@@ -98,8 +100,9 @@
     color: rgba(0, 170, 50, 0.85);
 }
 #menuNav:active, #homeNav:active, #helpNav:active{
-    opacity: 0.4;   
+    opacity: 0.2;   
 }
+
 #menuNav img, #homeNav img{
     max-height: 1.5em;
     float: left;
@@ -608,11 +611,13 @@ span .ui-icon .ui-icon-plus{
     
     #home div.ui-panel-content-wrap-closed, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_768.png');
-      
     }
     #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_768.png');
-      
+    }
+    #contact div.ui-panel-content-wrap-closed{
+        background-image: url('../images/montage/home_768_blur.png');
+        /*background: rgb(255,255,255);*/
     }
     .home-display h3{
     width: 35%;
@@ -670,20 +675,24 @@ span .ui-icon .ui-icon-plus{
     width: 50%;
     }
     #com{
-    left:0;
+    /*left:0;
     bottom: 0;
     width: 100%;
     height: 90px;
     position: fixed;
-    z-index: 100;
+    z-index: 100;*/
     }
     #com div a{
-    height: 90px;
+    height: 100px;
     
     }
     #com div a img{
     }
     #com div a span{
+        background-size: 90px;
+        background-position: 0 20px;
+        padding-left: 90px;
+        padding-bottom: 60px;
     }
     #maps, #mapsContent,.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed {  
     height: 97%;
@@ -709,36 +718,38 @@ span .ui-icon .ui-icon-plus{
     /*Homepage Image*/
     
     .home-image{
-    background-position: 0 -200px;
-    height: 900px;  
+        background-position: 0 -200px;
+        height: 900px;  
     }
 
     #cont-link a {
-    height: 70px;
+        height: 70px;
     }
     #cont-link a span:not(.arrow-right-home){
-    font-size: 1.8em;
+        font-size: 1.8em;
     }
     .arrow-right-home{
-    background-size: 20px;
-    width: 40px;
-    height: 40px;
+        background-size: 20px;
+        width: 40px;
+        height: 40px;
     }
     
     /* Communications footer on homepage*/
     #com div.hide{
-    display: none;   
+        display: none;   
     }
     
-    #com{
-    height: 110px;
-        
-    }
     #com div a{
+    height: 120px;
+    
     }
     #com div a img{
     }
     #com div a span{
+        background-size: 100px;
+        background-position: 0 20px;
+        padding-left: 100px;
+        padding-bottom: 60px;
     }
     .feature .article-headline{
         font-size: 1.8em;  
@@ -756,14 +767,14 @@ span .ui-icon .ui-icon-plus{
     }
     
     #menuNav, #homeNav, #helpNav{
-    font-size: 1.6em;
+        font-size: 1.6em;
     }
     
     #left-panel span{
-    font-size: 1.2em;
+        font-size: 1.2em;
     }
     #left-panel p{
-    font-size: 2.4em;     
+        font-size: 2.4em;     
     }
     
     /*Custom Buttons*/
@@ -773,11 +784,11 @@ span .ui-icon .ui-icon-plus{
     /*Tables*/
     
     thead{
-    font-size: 1.2em !important;
+        font-size: 1.2em !important;
     }
     
     tbody{
-    font-size: 1em !important;
+        font-size: 1em !important;
     }
     
     #sectionTitle{
@@ -792,14 +803,14 @@ span .ui-icon .ui-icon-plus{
         /*Icons*/
 
     .icon-transferlist, .icon-news, .icon-membership, .icon-coaching, .icon-health, .icon-career, .icon-antidoping, .icon-tax, .icon-transfer, .icon-betting, .icon-agency, .icon-maps{
-    background-image: url('../images/list-icons/list-icons.svg');
-    background-repeat: no-repeat;
-    background-size: 23px;
-    padding-left: 23px;
+        background-image: url('../images/list-icons/list-icons.svg');
+        background-repeat: no-repeat;
+        background-size: 23px;
+        padding-left: 23px;
     
     }
     .icon-transferlist{
-       background-position: 0 0;    
+        background-position: 0 0;    
     }
     .icon-news{
         background-position: 0 -23px;
