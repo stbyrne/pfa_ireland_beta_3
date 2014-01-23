@@ -320,17 +320,10 @@
     background-position: 0 5px;
     padding-left: 70px;
     padding-bottom: 40px;
-<<<<<<< HEAD
 }
 #com div a:active{
     background: rgb(95, 95, 95);
 }
-=======
-}
-#com div a:active{
-    background: rgb(95, 95, 95);
-}
->>>>>>> b26d3c094a86ad533d162137716cc421735c4c9a
 .icon-mobile{
     background-image: url('../images/call_gr.svg');
     background-repeat: no-repeat;
@@ -730,7 +723,6 @@ span .ui-icon .ui-icon-plus{
     }
 
     #cont-link a {
-<<<<<<< HEAD
         height: 90px;
     }
     #cont-link a span:not(.arrow-right-home){
@@ -740,17 +732,6 @@ span .ui-icon .ui-icon-plus{
         background-size: 25px;
         width: 50px;
         height: 50px;
-=======
-        height: 70px;
-    }
-    #cont-link a span:not(.arrow-right-home){
-        font-size: 1.8em;
-    }
-    .arrow-right-home{
-        background-size: 20px;
-        width: 40px;
-        height: 40px;
->>>>>>> b26d3c094a86ad533d162137716cc421735c4c9a
     }
     
     /* Communications footer on homepage*/
