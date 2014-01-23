@@ -1,9 +1,10 @@
-#home .ui-panel .ui-panel-inner {
+.ui-panel .ui-panel-inner{
     overflow: auto;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;  
     -webkit-overflow-scrolling: touch;
 }
+
 
 #noconnect{
     width: 70%;
@@ -52,28 +53,22 @@
     width: 30%;
 }
 
-#home div.ui-panel-content-wrap-closed, #home div.ui-body-c:not(#left-panel){
+#home div.ui-panel-content-wrap-closed, #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_720.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    
       
 }
-#home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
-    background-image: url('../images/montage/home_720.png');
+
+
+#contact div.ui-panel-content-wrap-closed{
+    background-image: url('../images/montage/home_720_blur.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-      
+    min-height: inherit;
+    /*background: rgb(255,255,255);*/
 }
-
-#contact.ui-body-c{
-    /*background-image: url('../images/montage/home_720_blur.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-    background: rgb(255,255,255);
-      
-}
-
-
 
 .ui-header{
     height: 60px;   
@@ -105,8 +100,9 @@
     color: rgba(0, 170, 50, 0.85);
 }
 #menuNav:active, #homeNav:active, #helpNav:active{
-    opacity: 0.4;   
+    opacity: 0.2;   
 }
+
 #menuNav img, #homeNav img{
     max-height: 1.5em;
     float: left;
@@ -118,21 +114,21 @@
     bottom: 10px;
     position: fixed;
     width: 80%;
-    margin: auto 10%;
+    margin: auto 8%;
 }
 #cont-link a {
     text-decoration: none;
-    height: 40px;
+    height: 60px;
     width: 100%;
     float: left;
     text-align: center;
     color: #fff;
-    background: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.35);
     border-bottom: 1px solid rgb(130,130,130);
 }
 #cont-link a span:not(.arrow-right-home){
     text-align: center;
-    font: 1.4em Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
+    font: 1.6em Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
     font-weight: 300;
     text-shadow: none;
     position: relative;
@@ -140,9 +136,12 @@
 }
 
 #cont-link a:active {
-    color: #fff;
+    color: #00b937;
     background: rgba(95,95,95,.7);
     border-bottom: 1px solid rgb(250,250,250);
+}
+#cont-link a:active span.arrow-right-home{
+    background-image: url('../images/svg/arr_wr.svg');
 }
 
 /* Over-ride listviews*/
@@ -168,6 +167,7 @@
     right: 5px;
     position: absolute;
 }
+
 .arrow-right{
     background-size: 8px;
     top: 35%;
@@ -175,10 +175,10 @@
     height: 15px;
 }
 .arrow-right-news{
-    background-size: 12px;
-    top: 40%;
-    width: 25px;
-    height: 25px;
+    background-size: 15px;
+    top: 25%;
+    width: 30px;
+    height: 30px;
 }
 .arrow-right-home{
     background-size: 12px;
@@ -296,31 +296,11 @@
     bottom: 15px;
     position: fixed;
     width: 100%;
-    /*left:0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    z-index: 100;
-    background: none;
-    border: none;*/
 }
 #com div{
     margin: 15px;
 }
 #com div a{
-    /*display: -webkit-box;
-    display: -moz-box;
-    display: -o-box;
-    display: -ms-box;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-box-pack: center;*/
-    /*border-right: 1px solid #bfbfbf*/;
-    /*margin-right: -1px;*/
-    /*padding: 10px;*/
-    
     height: 60px;
     bottom: 0;
     width: 100%;
@@ -336,17 +316,50 @@
     box-shadow: inset 0 -1px 1px rgba(95,95,95,.8);
 }
 #com div a span{
-    font: .8em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
-    text-decoration: none;
-    text-shadow: none;
-    margin: 5px 16px;
+    background-size: 70px;
+    background-position: 0 5px;
+    padding-left: 70px;
+    padding-bottom: 40px;
+<<<<<<< HEAD
 }
-/*#com div a#call{
-    background-image: url('../images/call_gr.png');
+#com div a:active{
+    background: rgb(95, 95, 95);
+}
+=======
+}
+#com div a:active{
+    background: rgb(95, 95, 95);
+}
+>>>>>>> b26d3c094a86ad533d162137716cc421735c4c9a
+.icon-mobile{
+    background-image: url('../images/call_gr.svg');
     background-repeat: no-repeat;
-    background-size: 17px;
-    padding-left: 17px;   
-}*/
+}
+.icon-mail{
+    background-image: url('../images/mail_gr.svg');
+    background-repeat: no-repeat;
+}
+.icon-twitter{
+    background-image: url('../images/twit_gr.svg');
+    background-repeat: no-repeat;
+}
+.icon-facebook{
+    background-image: url('../images/face_gr.svg');
+    background-repeat: no-repeat;
+}
+
+#com div a:active span.icon-mobile{
+    background-image: url('../images/call_w.svg');
+}
+#com div a:active span.icon-mail{
+    background-image: url('../images/mail_w.svg');
+}
+#com div a:active span.icon-twitter{
+    background-image: url('../images/twit_w.svg');
+}
+#com div a:active span.icon-facebook{
+    background-image: url('../images/face_w.svg');
+}
 #com div a img{
     margin: 10px auto;
     max-height: 90%;
@@ -419,21 +432,21 @@ tbody{
     
 }
 #logo{
-	right: .5em;
+        right: .5em;
     bottom: .5em;
-	width: 5em;
-	height: 1em;
+        width: 5em;
+        height: 1em;
     position: absolute;
     cursor: pointer;
 }
 /*.lessonTitle{
-	text-align: left;
-	font-size: 1em;
-	padding-left: 1.5em;
+        text-align: left;
+        font-size: 1em;
+        padding-left: 1.5em;
 }*/
 
 #homeButton{
-	float: right;
+        float: right;
 }
 /*.ui-li-thumb{
     margin-top: 1em;
@@ -441,14 +454,14 @@ tbody{
     position: absolute;
 }*/
 span{
-	white-space: normal;
+        white-space: normal;
     font: bold 1.1em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
 }
 
 .lesson .ui-btn-text .ui-li-desc {
     padding-top: .4em;
     padding-left: .5em;
-	font: .9em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
+        font: .9em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif;
     white-space: normal;
 }
 
@@ -456,18 +469,18 @@ span{
     height: 2em;   
 }
 .ui-input-text.ui-body-c{
-	margin: .5em 0;
-	padding: 0 .4em;
+        margin: .5em 0;
+        padding: 0 .4em;
 }
 
 .ui-header .ui-title{
-	/*text-align: left !important;*/
-	/*min-height: 2.5em;*/
-	font: bold 1em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif !important;
+        /*text-align: left !important;*/
+        /*min-height: 2.5em;*/
+        font: bold 1em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif !important;
     /*padding-right: .2em !important;*/
-	padding-left: 1em !important;
-	margin: .6em 2.5em !important;
-	text-overflow: ellipsis !important;
+        padding-left: 1em !important;
+        margin: .6em 2.5em !important;
+        text-overflow: ellipsis !important;
 }
 /*.ui-header span{
     font: 0.6em  Helvetica Neue, Helveltica, Calibri, Arial, Verdana, sans-serif !important; 
@@ -605,18 +618,20 @@ span .ui-icon .ui-icon-plus{
     
     #home div.ui-panel-content-wrap-closed, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_768.png');
-      
     }
-#home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
+    #home div.ui-panel-content-wrap-open, #home div.ui-body-c:not(#left-panel){
     background-image: url('../images/montage/home_768.png');
-      
+    }
+    #contact div.ui-panel-content-wrap-closed{
+        background-image: url('../images/montage/home_768_blur.png');
+        /*background: rgb(255,255,255);*/
     }
     .home-display h3{
     width: 35%;
     font-size: 2.5em;
     letter-spacing: 0;
     }
-.home-display p{
+    .home-display p{
     margin: 20px 0;
     width: 30%;
     font-size: 1.4em;
@@ -667,25 +682,24 @@ span .ui-icon .ui-icon-plus{
     width: 50%;
     }
     #com{
-    left:0;
+    /*left:0;
     bottom: 0;
     width: 100%;
     height: 90px;
     position: fixed;
-    z-index: 100;
+    z-index: 100;*/
     }
     #com div a{
-    height: 90px;
-    width: 25%;
+    height: 100px;
     
     }
     #com div a img{
-    margin: 10px 30% 0;
-    max-width: 50%;
     }
     #com div a span{
-    font-size: .8em;
-    margin: 8px 30px;
+        background-size: 90px;
+        background-position: 0 20px;
+        padding-left: 90px;
+        padding-bottom: 60px;
     }
     #maps, #mapsContent,.ui-panel-content-wrap.ui-body-c.ui-panel-animate.ui-panel-content-wrap-closed {  
     height: 97%;
@@ -711,30 +725,50 @@ span .ui-icon .ui-icon-plus{
     /*Homepage Image*/
     
     .home-image{
-    background-position: 0 -200px;
-    height: 900px;  
+        background-position: 0 -200px;
+        height: 900px;  
+    }
+
+    #cont-link a {
+<<<<<<< HEAD
+        height: 90px;
+    }
+    #cont-link a span:not(.arrow-right-home){
+        font-size: 2em;
+    }
+    .arrow-right-home{
+        background-size: 25px;
+        width: 50px;
+        height: 50px;
+=======
+        height: 70px;
+    }
+    #cont-link a span:not(.arrow-right-home){
+        font-size: 1.8em;
+    }
+    .arrow-right-home{
+        background-size: 20px;
+        width: 40px;
+        height: 40px;
+>>>>>>> b26d3c094a86ad533d162137716cc421735c4c9a
     }
     
     /* Communications footer on homepage*/
     #com div.hide{
-    display: none;   
+        display: none;   
     }
     
-    #com{
-    height: 110px;
-        
-    }
     #com div a{
-    height: 110px;
-    width: 33.3%;
+    height: 120px;
+    
     }
     #com div a img{
-        margin: 15px 38% 0;
-        max-width: 60%;
     }
     #com div a span{
-    font-size: 1em;
-    margin: 8px 30px;
+        background-size: 100px;
+        background-position: 0 20px;
+        padding-left: 100px;
+        padding-bottom: 60px;
     }
     .feature .article-headline{
         font-size: 1.8em;  
@@ -752,14 +786,14 @@ span .ui-icon .ui-icon-plus{
     }
     
     #menuNav, #homeNav, #helpNav{
-    font-size: 1.6em;
+        font-size: 1.6em;
     }
     
     #left-panel span{
-    font-size: 1.2em;
+        font-size: 1.2em;
     }
     #left-panel p{
-    font-size: 2.4em;     
+        font-size: 2.4em;     
     }
     
     /*Custom Buttons*/
@@ -769,11 +803,11 @@ span .ui-icon .ui-icon-plus{
     /*Tables*/
     
     thead{
-    font-size: 1.2em !important;
+        font-size: 1.2em !important;
     }
     
     tbody{
-    font-size: 1em !important;
+        font-size: 1em !important;
     }
     
     #sectionTitle{
@@ -788,14 +822,14 @@ span .ui-icon .ui-icon-plus{
         /*Icons*/
 
     .icon-transferlist, .icon-news, .icon-membership, .icon-coaching, .icon-health, .icon-career, .icon-antidoping, .icon-tax, .icon-transfer, .icon-betting, .icon-agency, .icon-maps{
-    background-image: url('../images/list-icons/list-icons.svg');
-    background-repeat: no-repeat;
-    background-size: 23px;
-    padding-left: 23px;
+        background-image: url('../images/list-icons/list-icons.svg');
+        background-repeat: no-repeat;
+        background-size: 23px;
+        padding-left: 23px;
     
     }
     .icon-transferlist{
-       background-position: 0 0;    
+        background-position: 0 0;    
     }
     .icon-news{
         background-position: 0 -23px;

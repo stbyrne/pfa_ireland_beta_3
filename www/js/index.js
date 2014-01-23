@@ -177,11 +177,11 @@ jsonTitles(function(content){
 
  /*if( /Chrome|Safari|IE/i.test(navigator.userAgent) ) {*/
 
-     $('#com div a').on('touchstart', function(){
+     /*$('#com div a').on('touchstart', function(){
          $(this).css({'background': 'rgb(95,95,95)', 'color': '#fff'});
             }).on('touchend', function(){
                 $(this).css({'background': 'rgba(255,255,255,.6)', 'color': 'rgb(95,95,95)'});
-                });
+                });*/
            
         /*}else{
             $('#com div a').on('touchstart', function(){
@@ -195,7 +195,7 @@ jsonTitles(function(content){
 
 /////////////Apply click events to communication buttons on homepage//////////////
 
-$('#mail').on('click', function(){
+/*$('#mail').on('click', function(){
     $(this).attr('href', 'mailto:info@pfai.ie');
     });
 
@@ -209,7 +209,7 @@ window.open('https://twitter.com/PFAIOfficial');
 
 $('#face').on('click', function(){
 window.open('https://www.facebook.com/pages/PFAIOfficial/137333183069003');
-    });
+    });*/
 
    
 
